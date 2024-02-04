@@ -1,0 +1,51 @@
+********************Lab4 marking scheme***********************
+Total: 100 marks (5% of the total course mark.)
+Bonus: 10 marks  (0.5% of the total course mark.)
+Overall: 110 marks
+
+Demo - 70 marks:  Linear Probing (35)+ Quadratic Probing (35)
+
+Marks Distribition for Demo:
+(1-5) Tests for Linear Probing (26)
+
+(6-10) Tests for Quadratic Probing (26)
+
+11)  Test 11-Probing Simulations for Linear Probing Hash Table (9) 
+12)  Test 12-Probing Simulations for Quadratic Probing Hash Table  (9)
+
+Instruction: 
+
+1. The test class "TestHashTable.java" automatically checks and sums up total marks for tests 1-13.
+2.Please add the get methods relevant to the table (max load factor, number of keys, table size, etc.)in your HashTableLin.java and HashTableQuad.java files
+ in order to run the TestHashTable.java file. 
+3. Table size should be prime with no duplicate. To find the next prime number, it is ok to use a library.
+    
+
+Note: 
+1. In test 11, students provide both experimetal and theoritical values of avg. no. of probes for successful search for each λ = 0.1, 0.2, · · · , 0.9 using Linear Probing. 
+The test class automatically checks and compare the experimental values with the theoretical values (TV). The test class allows a max difference of ~(.1*TV) to pass.
+2. For test 12 students are supposed to provide experimental values of avg. no. of probes for successful search for each λ = 0.1, 0.2, · · · , 0.9 using Quadratic Probing. For better comparison 
+an estimation of # probes is calculated for each λ. The test class automatically checks and compare the experimental value with this estimated value (EV).  The test class allows a max difference of ~(.1*EV) 
+to pass.
+3. TAs will check and compare output of KeysAndIndexes during demo at the end of each test (1-10).
+
+Question/Answer- 10 marks 
+//(5 for each type of probing)
+
+Runtime and Space complexity- 10 marks 
+//(5 for each type of probing)
+//The students should show run time and space complexity for all methods they wrote for this lab.  
+
+All fields private - 10 marks 
+//(5 for each type of probing)
+//includes a field named table, of type Integer[], and other fields: size of the table, the number of keys stored in the table and the load factor etc.
+
+
+BONUS - 10 marks
+For the bonus - Test 13 
+//Comment out the bonus part if students don't have it. 
+1 mark for the method, 1 mark for result for each  λ
+//Students must change the method's name with their own to run the bonus part. 
+//Students must provide both experimetal and theoretical values of avg. no. of probes for unsuccessful search for each λ = 0.1, 0.2, · · · , 0.9 using Linear probing. 
+The test class automatically checks and compare the experimental values with the theoretical values (TV). The test class allows a max difference of ~(.1*TV) to pass.
+
